@@ -74,6 +74,7 @@ for i in range(iteration_count):
     for slaveId in slavesArr:
         try:
             tkmc.execute(slaveId, tkCst.READ_HOLDING_REGISTERS, reg_addr, register_count)
+            # tkCst.Rea
         except:
             errCnt += 1
             tb = traceback.format_exc()
